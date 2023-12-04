@@ -1,0 +1,31 @@
+﻿<Page x:Class="ConstComp.Pages.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ConstComp.Pages"
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      mc:Ignorable="d" 
+      d:DesignHeight="330" d:DesignWidth="784"
+      Title="MainPage">
+
+    <Page.Resources>
+        <sys:String x:Key="mainimage">
+            pack://application:,,,/Pages/MainPhoto.jpg
+        </sys:String>
+    </Page.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="196"/>
+            <ColumnDefinition Width="196"/>
+            <ColumnDefinition Width="196"/>
+            <ColumnDefinition Width="196"/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,120,0,0" Content="Материалы" Background="SkyBlue" Width="120" Height="80" Click="btnmaterials_Click" FontFamily="Segoe Script" FontWeight="Bold"/>
+        <Button Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,120,0,0" Content="Заказы" Background="SkyBlue" Width="120" Height="80" Click="btnorderlist_Click" FontFamily="Segoe Script" FontWeight="Bold"/>
+        <Button Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,120,0,0" Content="Поставщики" Background="SkyBlue" Width="120" Height="80" Click="btnproviders_Click" FontFamily="Segoe Script" FontWeight="Bold"/>
+        <Button Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,120,0,0" Content="Сотрудники" Background="SkyBlue" Width="120" Height="80" Click="btnstaff_Click" FontFamily="Segoe Script" FontWeight="Bold"/>
+
+    </Grid>
+</Page>
